@@ -1,0 +1,84 @@
+@media screen and (max-width: 1280px) {
+  #main-container {
+    width: 100%;
+  }
+  #main-section {
+    width: 90%;
+  }
+  #container-form {
+    width: 90%;
+    margin: 20px 30px;
+  }
+  #text-con {
+    margin-left: 30px;
+    font-size: medium;
+  }
+  nav ul li a {
+    font-size: 0.8em;
+    padding: 10px 30px;
+  }
+  #text-nav {
+    padding: 0px 6px;
+  }
+  footer {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 970px) {
+  #div-nav {
+    text-align: center;
+    display: flex;
+    flex: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  #text-con {
+    margin-left: 5px;
+    font-size: medium;
+  }
+  #text-nav {
+    font-size: 10px;
+    display: inline-block;
+    margin-top: 4px;
+  }
+  nav ul li a {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #text-con {
+    margin-left: 0px;
+    font-size: small;
+  }
+  #text-nav {
+    font-size: 9px;
+    display: inline-block;
+    margin-top: 0px;
+  }
+  nav ul li a {
+    font-size: 0.7em;
+    padding: 4px 8px;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #text-con {
+    margin-left: 0px;
+    font-size: small;
+  }
+  #text-nav {
+    font-size: 8px;
+    display: inline-block;
+    margin-top: 2px;
+  }
+  nav ul li a {
+    font-size: 0.7em;
+    padding: 0px 5px;
+  }
+  #container-form {
+    margin: 10px 10px;
+  }
+}
