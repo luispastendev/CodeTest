@@ -74,7 +74,7 @@
 </section>
 <?= $this->section('language') ?>
 <div class="btn-group dropend">
-    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src='/public/img/translate.svg'></button>
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src='/TestCode/public/img/translate.svg'></button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
         <li><a href="<?php echo base_url('/en/contact-us'); ?>">English</a></li>
         <li><a href="<?php echo base_url('/es/contact-us'); ?>">Español</a></li>
@@ -130,7 +130,7 @@
                 };
                 $.ajax({
                     method: "POST",
-                    url: "/add",
+                    url: "/TestCode/add",
                     data: data,
                     success: function(response) {
                         $('#contactform').find('input').val(''),
@@ -144,7 +144,7 @@
         });
     });
 </script>
-<script type="text/javascript" src="/public/js/main.js"></script>
+<script type="text/javascript" src="/TestCode/public/js/main.js"></script>
 <!----Quill JS-->
 
 <script>
