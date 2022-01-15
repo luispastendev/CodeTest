@@ -126,7 +126,7 @@
             $('#table').DataTable({
                 "processing": true,
                 "serverSide": true,
-                "ajax": "/TestCode/public/php/server_processing.php",
+                "ajax": "/public/php/server_processing.php",
                 "columnDefs": [{
                     'responsivePriority': 1,
                     'targets': 0,

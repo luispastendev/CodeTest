@@ -42,6 +42,10 @@ class Contact extends Migration
                 'type'       => 'DATETIME',
                 'null'       => FALSE,
             ],
+            'updated_at' => [
+                'type'       => 'DATETIME',
+                'null'       => FALSE,
+            ],
         ]);
         $this->forge->addKey('id', TRUE);
         $this->forge->createTable('contact');

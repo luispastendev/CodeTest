@@ -9,13 +9,11 @@ class CodeTest extends BaseController
 {
     public function index()
     {
-
         return view(
             'contactView/contact',
             ['locale' => $this->request->getLocale()]
         );
     }
-
 
     public function add()
     {
@@ -23,14 +21,16 @@ class CodeTest extends BaseController
         $data = [
             'name' => $this->request->getPost('name'),
             'phone' => $this->request->getPost('phone'),
-            'ctype' => $this->request->getPost('ctype'),
+            'id_ctype' => $this->request->getPost('ctype'), // ctype o idctype??
             'bday' => $this->request->getPost('bday'),
-            'description' => $this->request->getPost('description')
+//            'description' => $this->request->getPost('description') // ?? no en la misma tabla
         ];
+
         $contact->save($data);
         $data = ['status' => 'Contact inserted Successfully'];
         return $this->response->setJSON($data);
     }
+
     public function tableForm()
     {
         return view('contactView/contactList', ['locale' => $this->request->getLocale()]);
@@ -58,7 +58,7 @@ class CodeTest extends BaseController
         $data = [
             'name' => $this->request->getPost('name'),
             'phone' => $this->request->getPost('phone'),
-            'ctype' => $this->request->getPost('ctype'),
+            'id_ctype' => $this->request->getPost('ctype'), // id_ctype
             'bday' => $this->request->getPost('bday'),
         ];
         $table->update($contact_id, $data);
